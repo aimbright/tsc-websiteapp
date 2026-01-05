@@ -17,7 +17,6 @@ export const generatePDF = (pages: Page[], catalogTitle: string) => {
   const pageHeight = 297; // A4 height in mm
   const margin = 15;
   const contentWidth = pageWidth - (margin * 2);
-  const contentHeight = pageHeight - (margin * 2);
 
   pages.forEach((page, index) => {
     if (index > 0) {
@@ -101,7 +100,7 @@ const renderCategoryPage = (
   pdf: jsPDF,
   content: any,
   pageWidth: number,
-  pageHeight: number,
+  _pageHeight: number,
   margin: number,
   contentWidth: number
 ) => {
@@ -243,7 +242,7 @@ const renderProductPage = (
 const renderTablePage = (
   pdf: jsPDF,
   content: any,
-  pageWidth: number,
+  _pageWidth: number,
   pageHeight: number,
   margin: number,
   contentWidth: number
