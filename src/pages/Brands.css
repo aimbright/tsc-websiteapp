@@ -1,0 +1,141 @@
+.brands-page {
+  padding-top: 80px;
+}
+
+.page-hero {
+  background: rgba(10, 25, 41, 0.6);
+  padding: 100px 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--gold);
+}
+
+.page-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 20px;
+}
+
+.page-hero p {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: var(--text-light);
+}
+
+.brands-content {
+  background: rgba(10, 25, 41, 0.3);
+}
+
+.brands-list {
+  display: grid;
+  gap: 50px;
+}
+
+.brand-detail-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(212, 175, 55, 0.3);
+  border-radius: 20px;
+  padding: 50px 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.brand-detail-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);
+}
+
+.brand-logo-large {
+  margin-bottom: 30px;
+}
+
+.brand-logo-circle {
+  width: 120px;
+  height: 120px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.brand-logo-circle span {
+  color: var(--royal-blue-dark);
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.brand-detail-card h2 {
+  color: var(--gold);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.brand-description {
+  color: var(--text-light);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-products {
+  margin-bottom: 30px;
+}
+
+.brand-products h3 {
+  color: var(--gold);
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.products-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.product-tag {
+  background: rgba(212, 175, 55, 0.2);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.brand-cta {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 60px 20px;
+  }
+
+  .brand-detail-card {
+    padding: 40px 30px;
+  }
+
+  .brand-logo-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .brand-logo-circle span {
+    font-size: 2rem;
+  }
+
+  .brand-detail-card h2 {
+    font-size: 2rem;
+  }
+
+  .brand-description {
+    font-size: 1.1rem;
+  }
+}
+
